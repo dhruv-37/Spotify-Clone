@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify- Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="side-panel">
+            <div class="side-nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option opacity">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="library-option">
+                    <div class="lib-option">
+                        <img src="./assets/library_icon.png" alt="Library">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <div class="icon1">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="icon2">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="lib-tabs">
+                    <div class="tab">Playlists</div>
+                    <div class="tab">Artists</div>
+                    <div class="tab">Albums</div>
+                </div>
+                <div class="lib-album">
+                    <div class="album-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="recent">
+                            <p>Recents</p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="album-tabs">
+                        <div class="album-tab">
+                            <div class="album-cover">
+                                <img src="./Library Albums/liked.jpeg" alt="liked">
+                            </div>
+                            <div class="album-info">
+                                <p class="album-title">Liked Songs</p>
+                                <p class="album-sub-title"><i class="fa-solid fa-thumbtack"></i>&nbsp;&nbsp;Playlist &middot; 380 songs</p>
+                            </div>
+                        </div>
+
+                        <div class="album-tab">
+                            <div class="album-cover">
+                                <img src="./Library Albums/KOIH.jpg" alt="KOIH">
+                            </div>
+                            <div class="album-info">
+                                <p class="album-title">King Of Indian Hip Hop</p>
+                                <p class="album-sub-title"><i class="fa-solid fa-thumbtack"></i>&nbsp;&nbsp;Album &middot; Emiway Bantai</p>
+                            </div>
+                        </div>
+
+                        <div class="album-tab">
+                            <div class="album-cover">
+                                <img src="./aLibrary Albums/Dhindora.jpg" alt="Dhindora">
+                            </div>
+                            <div class="album-info">
+                                <p class="album-title">Dhindora</p>
+                                <p class="album-sub-title"><i class="fa-solid fa-thumbtack"></i>&nbsp;&nbsp;Album &middot; Bhuvan Bam</p>
+                            </div>
+                        </div>
+
+                        <div class="album-tab">
+                            <div class="album-cover">
+                                <img src="./Library Albums/ADHM.jpg" alt="ADHM">
+                            </div>
+                            <div class="album-info">
+                                <p class="album-title">Ae Dil Hai Mushkil Songs</p>
+                                <p class="album-sub-title"><i class="fa-solid fa-thumbtack"></i>&nbsp;&nbsp;Playlist &middot; 380 songs</p>
+                            </div>
+                        </div>
+
+                        <div class="album-tab">
+                            <div class="album-cover">
+                                <img src="./Library Albums/dj.jpg" alt="Dance DJ">
+                            </div>
+                            <div class="album-info">
+                                <p class="album-title">DANCE DJ</p>
+                                <p class="album-sub-title"><i class="fa-solid fa-thumbtack"></i>&nbsp;&nbsp;Playlist &middot; Dhruv</p>
+                            </div>
+                        </div>
+
+                        <div class="album-tab">
+                            <div class="album-cover artist-cover">
+                                <img src="./Library Albums/Arijit Sir.jpg" alt="Arijit Sir">
+                            </div>
+                            <div class="album-info">
+                                <p class="album-title">Arijit Singh</p>
+                                <p class="album-sub-title">Artist</p>
+                            </div>
+                        </div>
+
+                        <div class="album-tab">
+                            <div class="album-cover artist-cover">
+                                <img src="./Library Albums/Divine.jpg" alt="Divine">
+                            </div>
+                            <div class="album-info">
+                                <p class="album-title">DIVINE</p>
+                                <p class="album-sub-title">Artist</p>
+                            </div>
+                        </div>
+
+                        <div class="album-tab">
+                            <div class="album-cover artist-cover">
+                                <img src="./Library Albums/Goodboy.jpg" alt="Goodboy">
+                            </div>
+                            <div class="album-info">
+                                <p class="album-title">Badshah</p>
+                                <p class="album-sub-title">Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="left-right">
+                    <div class="left">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="sticky-buttons">
+                    <button type="button" class="hide2">Explore Premium</button>
+                    <button type="button install"><i class="fa-regular fa-circle-down"></i>&nbsp;Install App</button>
+                    <img src="./assets/user_icon.jpg" alt="User">
+                </div>
+            </div>
+            <div class="recently-played">
+                <p>Good morning</p>
+                <div class="recent-tabs-container">
+                    <div class="recent-tab">
+                        <div class="tab-cover">
+                            <img src="./Library Albums/liked.jpeg" alt="Liked">
+                        </div>
+                        <div class="tab-title">
+                            <p>Liked Songs</p>
+                        </div>
+                    </div>
+                    <div class="recent-tab">
+                        <div class="tab-cover">
+                            <img src="./Library Albums/PRAA.jpg" alt="P">
+                        </div>
+                        <div class="tab-title">
+                            <p>PRAA</p>
+                        </div>
+                    </div>
+                    <div class="recent-tab">
+                        <div class="tab-cover">
+                            <img src="./Library Albums/Daku.jpg" alt="Daku">
+                        </div>
+                        <div class="tab-title">
+                            <p>Daku</p>
+                        </div>
+                    </div>
+                    <div class="recent-tab">
+                        <div class="tab-cover">
+                            <img src="./Library Albums/KALESH.jpg" alt="Kalesh">
+                        </div>
+                        <div class="tab-title">
+                            <p>KALESHI CHORI</p>
+                        </div>
+                    </div>
+                    <div class="recent-tab">
+                        <div class="tab-cover">
+                            <img src="./Library Albums/Ektarfa.jpg" alt="Ektarfa">
+                        </div>
+                        <div class="tab-title">
+                            <p>Ektarfa</p>
+                        </div>
+                    </div>
+                    <div class="recent-tab">
+                        <div class="tab-cover">
+                            <img src="./Library Albums/Race 3.jpg" alt="Race 3">
+                        </div>
+                        <div class="tab-title last">
+                            <p>Bollywood Theme <br> Songs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-section">
+                <div class="section-heading">
+                    <h2>Recommended for today</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Card Cover/WOH.jpg" alt="WOH">
+                        <p class="card-title">WOH</p>
+                        <p class="card-info">Ikka, Dino James, Badshah</p>
+                    </div>
+                    <div class="card">
+                        <img src="./Card Cover/No Love.jpg" alt="No Love">
+                        <p class="card-title">No Love</p>
+                        <p class="card-info">Shubh</p>
+                    </div>
+                    <div class="card hide2">
+                        <img src="./Card Cover/Champagne.jpg" alt="Champagne">
+                        <p class="card-title">Champagne Talk</p>
+                        <p class="card-info">King</p>
+                    </div>
+                    <div class="card hide">
+                        <img src="./Card Cover/Farzi.jpg" alt="Farzi">
+                        <p class="card-title">Farzi (Original Series..</p>
+                        <p class="card-info">Sacin Jigar, Tanis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-section">
+                <div class="section-heading">
+                    <h2>Popular Albums</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Card Cover/Obsessed.jpg" alt="Obsessed">
+                        <p class="card-title">Obsessed</p>
+                        <p class="card-info">Riar Saab, Abhijay Sharma</p>
+                    </div>
+                    <div class="card">
+                        <img src="./Card Cover/Dilli.jpg" alt="Dilli">
+                        <p class="card-title">Dillihood</p>
+                        <p class="card-info">Dilli-Yungsta, Calm</p>
+                    </div>
+                    <div class="card hide2">
+                        <img src="./Card Cover/tollywood.jpg" alt="tollywood">
+                        <p class="card-title">Tollywood Pearls</p>
+                        <p class="card-info">The finest telugu music fr..</p>
+                    </div>
+                    <div class="card hide">
+                        <img src="./Card Cover/Indie.jpg" alt="Indie">
+                        <p class="card-title">Indie India</p>
+                        <p class="card-info">Akanksha Bhandari</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-section">
+                <div class="section-heading">
+                    <h2>Spotify Original &amp; Exclusive Shows</h2>
+                    <a href="#">Show all</a>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Card Cover/Mythpat.jpg" alt="Mythpat">
+                        <p class="card-title">The Mythpat Podcast</p>
+                        <p class="card-info">Spotify Studios</p>
+                    </div>
+                    <div class="card">
+                        <img src="./Card Cover/TRS.jpg" alt="TRS">
+                        <p class="card-title">The Ranveer Show</p>
+                        <p class="card-info">BeerBiceps</p>
+                    </div>
+                    <div class="card hide2">
+                        <img src="./Card Cover/TI.jpg" alt="TI">
+                        <p class="card-title">True Story Bro! with T..</p>
+                        <p class="card-info">Spotify</p>
+                    </div>
+                    <div class="card hide">
+                        <img src="./Card Cover/Dynamo.jpg" alt="Dynamo">
+                        <p class="card-title">Gamers Unplugged...</p>
+                        <p class="card-info">Spotify</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-up">
+                    <div class="one">
+                        <p style="color: white;">Company</p>
+                        <a href="#">About</a><br>
+                        <a href="#">Jobs</a><br>
+                        <a href="#">For the record</a>
+                    </div>
+                    <div class="two">
+                        <p style="color: white;">Communities</p>
+                        <a href="#">For Artists</a><br>
+                        <a href="#">Developers</a><br>
+                        <a href="#">Advertising</a><br>
+                        <a href="#">Investors</a><br>
+                        <a href="#">Vendors</a><br>
+                        <a href="#">Spotify for Work</a>
+                    </div>
+                    <div class="three">
+                        <p style="color: white;">Useful links</p>
+                        <a href="#">Support</a><br>
+                        <a href="#">Free Mobile App</a>
+                    </div>
+                    <div class="four">
+                        <div class="insta">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="fb">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr noshade="true">
+                <div class="footer-down">
+                    <div class="one-d">
+                        <ul>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Privacy Center</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">About Ads</a></li>
+                            <li><a class="hide" href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
+                    <div class="two-d">
+                        &copy; 2023 Spotify AB
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="player">
+        <div class="curr-song">
+            <div class="curr-song-cover">
+                <img src="./Card Cover/Na sata.jpg" alt="Na Sata">
+                <div class="curr-song-info">
+                    <p>Na Sata (From "Highway Love")</p>
+                    <a href="#" class="artist">Saudur</a>
+                </div>
+            </div>
+            <div class="curr-song-controls">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-radio radio"></i>
+            </div>
+        </div>
+        <div class="player-controls">
+            <div class="player-up">
+                <img src="./assets/player_icon1.png" alt="player_icon1">
+                <img class="sub" src="./assets/player_icon2.png" alt="player_icon2">
+                <img class="most" src="./assets/player_icon3.png" alt="player_icon3">
+                <img class="sub" src="./assets/player_icon4.png" alt="player_icon4">
+                <img src="./assets/player_icon5.png" alt="player_icon5">
+            </div>
+            <div class="player-down">
+                <p>00:00</p>
+                <input type="range" min="0" max="100" value="0" class="playbar">
+                <p>3:31</p>
+            </div>
+        </div>
+        <div class="player-options">
+            <img class= "control-one hide3" src="./Homework Assets/controls_icon1.png" alt="controls_icon1">
+            <img class= "control-two hide4" src="./Homework Assets/controld_icon2.png" alt="controld_icon2">
+            <img class= "control-three hide5" src="./Homework Assets/controls_icon3.png" alt="controls_icon3">
+            <img class= "control-four hide6" src="./Homework Assets/controls_icon4.png" alt="controls_icon4">
+            <img class= "control-five" src="./Homework Assets/controls_icon5.png" alt="controls_icon5">
+            <input type="range" min="0" max="100" step="1" value="0" class="playbar2">
+        </div>
+    </div>
+</body>
+</html>
